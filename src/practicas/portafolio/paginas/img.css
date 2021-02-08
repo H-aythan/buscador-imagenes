@@ -1,0 +1,9 @@
+.practica{
+    background-color: blue;
+    animation:expansion 20s ease;
+}
+
+@keyframes expansion{
+    from{max-height: 0;}
+    to{max-height: 100%;}
+}
