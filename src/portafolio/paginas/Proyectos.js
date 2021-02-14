@@ -3,7 +3,7 @@ import React from 'react'
 const Proyectos = () => {
     
     return (
-        <div className="relative w-full h-full animate-move-t sm:bg-proyectos bg-cover ">
+        <div className="relative w-full h-full animate-move-t sm:bg-proyectos bg-cover">
             <title>Proyectos</title>
             <div className="absolute mb-10 w-full h-full flex flex-col ">
                 

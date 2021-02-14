@@ -6,9 +6,9 @@ const Menu = () => {
     return (
         <>
        {modal&&<Modal modal={modal} setModal={setModal}/>}
-        <aside className="sm:h-screen h-1/3 flex-grow px-4 flex flex-col items-center bg-gray-900 ">
-            <div className="mt-5 sm:mt-32 w-40 sm:min-h-40 rounded-full sm:rounded-md bg-blueGray-400 overflow-y-hidden">
-                <img className="w-full h-full m-auto" src="/img/avatar.svg" alt="avatar.jpg"/>
+        <aside className="sm:h-screen sm:h-1/3 flex-grow px-4 flex flex-col items-center bg-gray-900 ">
+            <div className="mt-5 sm:mt-32 w-40 flex-shrink-0 h-40 rounded-full sm:rounded-md bg-blueGray-400 overflow-y-hidden">
+                <img className="w-full h-40 m-auto" src="/img/avatar.svg" alt="avatar.jpg"/>
             </div>
             <ul className="text-xs sm:text-lg text-center w-full mb-2 flex sm:flex-col items-start sm:items-center justify-center sm:h-32 mt-5 ">
                 

@@ -1,11 +1,11 @@
-import BuscadorImagenes from "./buscador imagenes/BuscadorImagenes"
+import Portafolio from './portafolio/Portafolio'
 
 const App=()=>{
     
     
     return(
        <>
-         <BuscadorImagenes/>
+         <Portafolio/>
        </>
     );
 }
