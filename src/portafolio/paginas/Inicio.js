@@ -29,7 +29,7 @@ const Inicio = () => {
     return (
         <div className="relative w-full h-full sm:animate-move-t flex-grow overflow-hidden
             flex sm:flex-col flex-wrap justify-center sm:justify-start md:bg-portafolio bg-cover bg-center
-            bg-gradient-to-b from-blueGray-900 to-cyan-600 "
+            bg-gradient-to-b from-blueGray-900 to-cyan-600"
         >
             <title>Home</title>
             <div className="pt-2 h-24 sm:mt-32">
