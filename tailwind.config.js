@@ -86,7 +86,7 @@ module.exports = {
   variants: {
     extend: {
       padding: ['hover'],
-      borderWidth:['hover'],
+      borderWidth:['hover','focus'],
       display:['hover'],
     },
   },

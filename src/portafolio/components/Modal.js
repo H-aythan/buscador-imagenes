@@ -1,9 +1,13 @@
 import React from 'react'
 
 const Modal = ({modal,setModal}) => {
+    const envio=(e)=>{
+        e.preventDefault()
+        setModal(!modal);
+    }
     return (
-        <div className="h-screen flex justify-center items-center w-screen bg-gray-800 bg-opacity-75 fixed top-0 z-40">
-            <div className="md:w-1/3 bg-gray-900 flex flex-wrap ">
+        <div className="h-screen flex justify-center items-center w-screen bg-gray-800 bg-opacity-75 fixed top-0 z-40" onClick={()=>setModal(!modal)}>
+            <div className="md:w-1/3 bg-gray-900 flex flex-wrap " onClick={(e)=>e.stopPropagation()}>
                 <div className="w-full h-10 float-right">
                     <button className="float-right text-xl focus:outline-none mt-2 mr-4"
                         onClick={()=>setModal(!modal)}
@@ -14,17 +18,22 @@ const Modal = ({modal,setModal}) => {
                 <p className="w-full text-xl text-center">Formas de contactarme </p>
                 <div className="borde h-4/5 w-full px-10">
                     <form className="flex flex-wrap flex-col py-10 ">
-                        <div className="flex flex-col max-h-16 flex-shrink text-xs sm:text-lg">
+                        <div className="flex flex-col flex-shrink text-xs sm:text-lg">
                             <p className="mb-2">Nombre:</p>
-                            <input className=" pl-2 focus:outline-none focus:border-b-2 h-6 border-orange-600 sm:h-10 bg-gray-800 rounded" type="text"/>
+                            <input className=" pl-2 focus:outline-none focus:border-b-2  h-6 border-orange-600 sm:h-10 bg-gray-800 rounded" type="text"/>
                         </div>
-                        <div className="flex flex my-14 flex-col max-h-16 text-xs sm:text-lg">
+                        <div className="flex flex my-14 flex-col text-xs sm:text-lg">
                             <p className="mb-2 ">Correo electronico:</p>
                             <input className="focus:border-b-2 focus:outline-none h-6 border-orange-600 pl-2 sm:h-10 bg-gray-800 rounded" type="text"/>
                         </div>
                         <div className="flex flex flex-col max-h-24 sm:max-h-32 text-xs sm:text-lg">
                             <p className="mb-2">Mensaje:</p>
                             <textarea className="focus:outline-none focus:border-2 h-6 border-orange-600 pl-2 max-h-32 h-32 bg-gray-800 rounded"></textarea>
+                        </div>
+                        <div className="flex justify-end mt-4">
+                            <button className="bg-gray-800 px-3 py-1 hover:bg-gray-600" onClick={(e)=>envio(e)}>
+                                Enviar
+                            </button>
                         </div>
                     </form>
                    

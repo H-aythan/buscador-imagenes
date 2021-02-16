@@ -17,19 +17,15 @@ const Menu = () => {
                     to="/home">
                         Home
                 </NavLink>
-                <NavLink className="p-1 hidden sm:block sm:w-28 sm:py-1 flex-grow sm:flex-grow-0" 
-                    activeClassName="border-b-2 bg-gray-700" 
-                    to="/sobremi">
-                    Sobre mi
-                </NavLink>
+               
                 <NavLink className="p-1 sm:w-28 sm:py-1 flex-grow sm:flex-grow-0" 
                     activeClassName="border-b-2 bg-gray-700" 
                     to="/proyectos">
                     Proyectos
                 </NavLink>
-                <a className="p-1 sm:w-28 sm:py-1 flex-grow sm:flex-grow-0 cursor-pointer" onClick={()=>setModal(!modal)}> 
-                    contacto
-                </a>
+                <button className="p-1 sm:w-28 focus:border-b-2 focus:outline-none focus:bg-gray-700 sm:py-1 flex-grow sm:flex-grow-0 cursor-pointer" onClick={()=>setModal(!modal)}> 
+                    Contacto
+                </button>
             </ul>
            <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink sm:flex flex-col items-center justify-around flex-grow">
                 <p className="border-b">Formas de contacto</p>
