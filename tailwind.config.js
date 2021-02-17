@@ -8,8 +8,7 @@ module.exports = {
     
     extend: { 
       backgroundImage: theme => ({
-        'portafolio':"url(/src/img/inicio3.jpg)",
-        'proyectos':"url(/src/img/proyectos1.jpg)",
+        
        }),
       colors: {
         
