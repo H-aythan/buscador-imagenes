@@ -27,12 +27,12 @@ const Inicio = () => {
     },[mounted])
     
     return (
-        <div className="relative w-full h-full sm:animate-move-t flex-grow overflow-hidden
-            flex sm:flex-col flex-wrap justify-center sm:justify-start md:bg-portafolio bg-cover bg-center
-            bg-gradient-to-b from-blueGray-900 to-cyan-600"
+        <div className="relative w-full h-full sm:animate-move-t flex-grow 
+            flex xl:flex-col flex-wrap justify-center xl:justify-start md:bg-portafolio bg-cover bg-center
+            bg-gradient-to-b from-blueGray-900 to-blueGray-800"
         >
             <title>Home</title>
-            <div className="pt-2 h-24 sm:mt-32">
+            <div className="pt-2 h-24 xl:mt-32 ">
                 
                 <h1 className="text-2xl sm:text-4xl md:text-5xl flex justify-center w-full"> 
                     <p className={`p-2 border-b-4 ${!animation&&"invisible"} 
@@ -48,9 +48,9 @@ const Inicio = () => {
                 </p>
                 
             </div>
-            <div className={`px-10 sm:mt-32 w-full justify-center flex sm:justify-between flex-wrap ${!animation3&&"invisible"}  ${animation3&&"relative animate-move-text-l visible"}`}>
+            <div className={`px-10 sm:mt-32 sm:text-2xl xl:text-lg w-full justify-center flex sm:justify-between flex-wrap ${!animation3&&"invisible"}  ${animation3&&"relative animate-move-text-l visible"}`}>
                 <p className="w-60 text-center py-2 ">Soy un desarrollador dedicado 
-                    a la parte web, para ser mas especifico en el area de front-end
+                    al area web, para ser mas especifico en la especialidad del desarrollo front-end
                 </p>
                 <p className="w-60 text-center py-2">Las herramientas que mas gustan para 
                     para desarrollar en el front-end son React Js y tailwindCss

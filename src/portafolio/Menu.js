@@ -6,11 +6,11 @@ const Menu = () => {
     return (
         <>
        {modal&&<Modal modal={modal} setModal={setModal}/>}
-        <aside className="sm:h-screen sm:h-1/3 flex-grow px-4 flex flex-col items-center bg-gray-900 ">
-            <div className="mt-5 sm:mt-32 w-40 flex-shrink-0 h-40 rounded-full sm:rounded-md bg-blueGray-400 overflow-y-hidden">
+        <aside className="xl:h-screen flex-grow px-4 flex flex-col items-center bg-gray-900">
+            <div className="mt-5 md:mt-16 xl:mt-32 w-40 flex-shrink-0 h-40 rounded-full sm:rounded-md bg-blueGray-400 overflow-y-hidden">
                 <img className="w-full h-40 m-auto" src="/img/avatar.svg" alt="avatar.jpg"/>
             </div>
-            <ul className="text-xs sm:text-lg text-center w-full mb-2 flex sm:flex-col items-start sm:items-center justify-center sm:h-32 mt-5 ">
+            <ul className="text-xs md:text-2xl xl:text-lg text-center w-full mb-2 flex xl:flex-col items-start sm:items-center justify-center xl:h-32 mt-5 ">
                 
                 <NavLink className="p-1 sm:w-28 sm:py-1 flex-grow sm:flex-grow-0" 
                     activeClassName="border-b-2 bg-gray-700" 
@@ -27,7 +27,7 @@ const Menu = () => {
                     Contacto
                 </button>
             </ul>
-           <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink sm:flex flex-col items-center justify-around flex-grow">
+           <div className="hidden h-72 mt-10 px-2 p-auto flex-shrink xl:flex flex-col items-center justify-around flex-grow">
                 <p className="border-b">Formas de contacto</p>
                 <div className="flex w-40 justify-around">
                     <img className="bg-white w-12" src="/img/logo/face.png" alt="face.png"/>

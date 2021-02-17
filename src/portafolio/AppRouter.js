@@ -8,7 +8,7 @@ const AppRouter = () => {
     return (
         <Router>
             <Menu/>     
-            <div className="relative w-full h-screen overflow-x-hidden sm:overflow-hidden flex">
+            <div className="relative w-full h-screen overflow-x-hidden xl:overflow-hidden flex">
                 <Route exsact path="/Home" component={Inicio}/>
                 <Route exsact path="/proyectos" component={Proyectos}/>
             </div>    
