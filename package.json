@@ -2,7 +2,7 @@
   "name": "myapli",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://H-aythan.github.io/react buscador de imagenes",
+  "homepage": "http://github.io/H-aythan/buscador-imagenes",
   "dependencies": {
     "@craco/craco": "^6.0.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
@@ -22,8 +22,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",

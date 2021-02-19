@@ -16,7 +16,7 @@ const Proveedor = ({children}) => {
         setPage(1);
     }
     
-    useEffect(()=>{
+   /*  useEffect(()=>{
         const traerImage=(page,termino)=>{
             GetImage(page,termino)
                 .then((datos)=>{
@@ -39,7 +39,7 @@ const Proveedor = ({children}) => {
         traerImage(page,termino);
         elemento.current.scrollIntoView("smooth","end")
         return()=>setMonted(false);
-    },[page,termino,monted])
+    },[page,termino,monted]) */
     
     return (
         <StateGlobal.Provider value={[imagenes,page,setPage,buscarTermino,error,elemento]}>
