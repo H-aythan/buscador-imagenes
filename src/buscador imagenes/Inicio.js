@@ -18,8 +18,8 @@ const Inicio = () => {
                     })}
                 </section> 
                 <div className="min-w-max text-xs sm:text-sm sm:w-1/4 flex text-white relative my-5 flex-grow">
-                    <button className="px-4 py-1 bg-cyan-700 hover:bg-cyan-300 flex-grow max-h-12" onClick={()=>setPage(page>1?page-1:1)}>
-                       &#9664; 
+                    <button className="px-4 py-1 bg-cyan-700 hover:bg-cyan-300 text-2xl flex-grow max-h-12" onClick={()=>setPage(page>1?page-1:1)}>
+                       &#9668; 
                     </button>
                     <button className="px-4 py-1 bg-cyan-700 hover:bg-cyan-300 flex-grow max-h-12 ">
                         {page}
@@ -36,8 +36,8 @@ const Inicio = () => {
                     <button className="px-4 py-1 bg-cyan-700 hover:bg-cyan-300 flex-grow max-h-12" onClick={()=>setPage(page+4)}>
                         {page+4}
                     </button>
-                    <button className="px-4 py-1 bg-cyan-700 hover:bg-cyan-300 flex-grow max-h-12" onClick={()=>setPage(page+1)}>
-                        &#9654;
+                    <button className="px-4 py-1 bg-cyan-700 hover:bg-cyan-300 flex-grow text-2xl max-h-12 " onClick={()=>setPage(page+1)}>
+                        &#9658;
                     </button>
                 </div>      
             </div>

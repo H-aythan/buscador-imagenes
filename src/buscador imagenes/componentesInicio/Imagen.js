@@ -1,4 +1,8 @@
 import React,{useState} from 'react'
+import favoritos from '../../img/logo/corazon1.jpg'
+import like from '../../img/logo/like.jpg'
+import usuario from '../../img/logo/user.jpg'
+import descargas from '../../img/logo/descarga.jpg'
 
 const Imagen = ({imagen}) => {
     const[hover,setHover]=useState(false);
@@ -9,17 +13,17 @@ const Imagen = ({imagen}) => {
             <img src={image} alt={type} className="w-full h-full"/>
             {hover&&<div className="absolute text-xs pt-1 bottom-0 h-5 w-full text-center flex px-2 bg-gray-800 opacity-75 animate-opacity-0-1 justify-between" >
                 <p className="flex">
-                    <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src="/img/logo/user.jpg" alt="user.jpg"/> {user}
+                    <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src={usuario} alt="user.jpg"/> {user}
                 </p> 
                 <div className="flex">
                     <p className="flex">
-                        <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src="/img/logo/corazon1.jpg"alt="corazon.jpg" /> {favorites}
+                      <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src={favoritos} alt="corazon.jpg" /> {favorites} 
                     </p>
                     <p className="flex mx-1">
-                        <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src="/img/logo/like.jpg" alt="like.jpg"/>   {likes}
+                        <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src={like} alt="like.jpg"/>   {likes}
                     </p>
                     <p className="flex">
-                        <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src="/img/logo/descarga.jpg" alt="descarga.jpg"/>   {downloads}
+                        <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src={descargas} alt="descarga.jpg"/>   {downloads}
                     </p>
                 </div>
             </div>}

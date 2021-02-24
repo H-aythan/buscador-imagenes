@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { StateGlobal } from '../apis usadas/context/Proveedor';
+import img from '../../img/img';
 
-
-const initImg=["/img/inicio.jpg","/img/inicio2.jpg","/img/lugia.jpg","/img/proyectos1.jpg"];
 
 const Header = () => {
+    
     
     const [nImg,setNImge]=useState(0);
     const [termino,setTermino]=useState("")
@@ -31,8 +31,8 @@ const Header = () => {
     return (
         <header className="relative w-screen bg-blueGray-500 h-4/5 text-center flex-grow" ref={elemento}>
         
-            <img src={initImg[nImg]} className="w-full h-full object-cover" alt="imageHeader"/>
-    
+            <img className="w-full h-full object-cover" src={img[nImg]}  alt="imageHeader"/>
+            
             <div className="absolute text-white w-full h-full top-0 flex flex-col  justify-center items-center">
                 <h1 className="sm:text-3xl ">Espectaculares imagenes para ver!</h1>
                 <form className="text-black min-w-20 min-w-max w-1/2 sm:h-9 flex mt-2 rounded flex ">
