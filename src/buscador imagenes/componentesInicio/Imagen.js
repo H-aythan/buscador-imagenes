@@ -11,7 +11,7 @@ const Imagen = ({imagen}) => {
     return (
         <div className="relative flex-grow sm:w-72 items-center sm:h-72 m-0.5 hover:border text-white" onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
             <img src={image} alt={type} className="w-full h-full"/>
-            {hover&&<div className="absolute text-xs pt-1 bottom-0 h-5 w-full text-center flex px-2 bg-gray-800 opacity-75 animate-opacity-0-1 justify-between" >
+            {hover&&<div className="absolute text-xs pt-1 mb-0.5 bottom-0 h-5 w-full text-center flex px-2 bg-gray-800 opacity-75 animate-opacity-0-1 justify-between" >
                 <p className="flex">
                     <img className="w-3 h-3 sm:w-4 sm:h-4 mr-1 rounded-full" src={usuario} alt="user.jpg"/> {user}
                 </p> 
